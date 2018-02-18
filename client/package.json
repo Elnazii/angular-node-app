@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js"
+    "webpack:watch": "webpack --watch --progress",
+    "webpac:server": "webpack-dev-server --config webpack.config.js",
+    "start": "npm-run-all --parallel webpack:watch webpac:server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.15",
     "angular": "1.5.5",
     "express": "^4.16.2",
     "webpack": "^3.11.0",
@@ -22,6 +25,10 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "0.6.12",
     "html-loader": "0.4.5",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
     "webpack": "1.15.0"
   }
 }

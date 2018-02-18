@@ -1,0 +1,21 @@
+.user-list{
+  table {
+    padding: 10px;
+    width: 100%;
+
+    thead{
+      th {
+        padding: 10px;
+        background-color: #dadada;
+        height: 20px;
+      }
+    }
+    tbody{
+      td {
+        padding: 10px;
+        background-color: #efefef;
+        height: 20px;
+      }
+    }
+  }
+}

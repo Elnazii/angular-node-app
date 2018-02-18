@@ -1,0 +1,33 @@
+.form-wrapper {
+
+  .form-input {
+    padding: 10px;
+
+    label {
+      display: block;
+    }
+
+    input {
+      padding: 5px;
+    }
+
+    input.error{
+      border:1px solid red;
+    }
+  }
+  .form-submit {
+    padding: 10px;
+    .btn {
+      padding: 10px 20px;
+      border: 0px;
+      background: green;
+      color: #fff;
+
+      &[disabled] {
+        background: #dadada;
+      }
+    }
+  }
+
+}
+

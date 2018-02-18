@@ -16,6 +16,10 @@ module.exports = {
         loaders: [
             { test: /\.html$/, loader: 'html-loader' },
             {
+                test:/\.(s*)css$/,
+                use:['style-loader','css-loader', 'sass-loader']
+            },
+            {
                 test: /\.js$/,
                 loaders: [
                     'babel-loader?' + JSON.stringify({
